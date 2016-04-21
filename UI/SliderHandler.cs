@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
+[AddComponentMenu("LudumDareResources/UI/Slider Control")]
 public class SliderHandler : MonoBehaviour
 {
 
@@ -10,7 +11,7 @@ public class SliderHandler : MonoBehaviour
 
     public int Value;
 
-    private tk2dSprite track;
+    private Renderer track;
 
     private float length;
     private float minX;
@@ -37,11 +38,11 @@ public class SliderHandler : MonoBehaviour
 	void Start ()
 	{
         // Get pieces
-	    track = transform.parent.GetChild(1).gameObject.GetComponent<tk2dSprite>();
+	    track = transform.parent.GetChild(1).gameObject.GetComponent<Renderer>();
 
         // Calculate useful values
-	    minX = track.renderer.bounds.min.x;
-	    maxX = track.renderer.bounds.max.x;
+	    minX = track.bounds.min.x;
+	    maxX = track.bounds.max.x;
 	    length = maxX - minX;
 	    snap = length / ((Maximum - Minimum) / Snap);
 

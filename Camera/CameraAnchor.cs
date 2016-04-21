@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
+[AddComponentMenu("LudumDareResources/Camera/Anchor To Camera")]
 public class CameraAnchor : MonoBehaviour
 {
 

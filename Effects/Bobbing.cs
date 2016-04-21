@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
+[AddComponentMenu("LudumDareResources/Effects/Bobbing Animation")]
 public class Bobbing : MonoBehaviour
 {
 
