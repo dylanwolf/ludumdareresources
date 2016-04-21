@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[AddComponentMenu("LudumDareResources/2D Toolkit/Error Window")]
 [RequireComponent(typeof(tk2dSlicedSprite))]
 public class ErrorWindow : MonoBehaviour {
 
@@ -89,8 +90,8 @@ public class ErrorWindow : MonoBehaviour {
 		textMesh.text = message;
 		Timer = FadeTimer;
 		state = WindowState.FadeIn;
-		textMesh.renderer.enabled = true;
-		window.renderer.enabled = true;
+		textMesh.GetComponent<Renderer>().enabled = true;
+		window.GetComponent<Renderer>().enabled = true;
 	}
 
 	public static void Hide()
@@ -104,7 +105,7 @@ public class ErrorWindow : MonoBehaviour {
 	protected void Hide_Internal()
 	{
 		state = WindowState.Hidden;
-		textMesh.renderer.enabled = false;
-		window.renderer.enabled = false;
+		textMesh.GetComponent<Renderer>().enabled = false;
+		window.GetComponent<Renderer>().enabled = false;
 	}
 }

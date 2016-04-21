@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
+[AddComponentMenu("LudumDareResources/Camera/Follow Camera Limiter Box")]
 [RequireComponent(typeof(BoxCollider))]
 public class CameraLimiterBox : MonoBehaviour
 {

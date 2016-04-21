@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[AddComponentMenu("LudumDareResources/2D Toolkit/Tiled Sprite Scoller")]
 [RequireComponent(typeof(tk2dTiledSprite))]
 public class TileScroller : MonoBehaviour {
 

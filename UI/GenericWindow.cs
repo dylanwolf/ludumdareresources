@@ -1,13 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[AddComponentMenu("LudumDareResources/UI/Generic Window")]
 public class GenericWindow : MonoBehaviour {
 
 	public static bool IsShown = false;
 
 	void Start()
 	{
-		Hide();
+		if (!IsShown)
+			Hide();
+		else
+			Show();
 	}
 
 	public void Show()
