@@ -73,7 +73,7 @@ public class Flier : MonoBehaviour {
 
 	public void Despawn()
 	{
-		DestroyObject(gameObject);
+		gameObject.SetActive(false);
 	}
 
 	[Serializable]
