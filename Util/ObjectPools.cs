@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
+[AddComponentMenu("LudumDareResources/Utility/Object Pools")]
 public class ObjectPools : MonoBehaviour {
 
 	static Dictionary<string, List<PoolItem>> pools = new Dictionary<string, List<PoolItem>>();
