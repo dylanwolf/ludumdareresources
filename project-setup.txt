@@ -1,0 +1,14 @@
+Resolution and aspect ratio:
+	- Identify the target aspect ratio(s) (4:3, 5:4, 16:10, 16:9)
+	- Turn off unused aspect ratios (Edit > Project Settings > Player > Standalone Player Options > Supproted Aspect Ratios)
+	- Maximum Ludum Dare insert is 900 x 600, which means:
+		- 4:3 = 800 x 675
+		- 16:10 = 900 x 562
+		- 16:9 = 900 x 506
+
+For 2D games:
+	- Turn off low quality settings (Edit > Project Settings > Quality)
+	- Turn off anti-aliasing (Edit > Project Settings > Quality)
+	- Don't generate mip maps (Sprite properties)
+
+Set Company and Product Names (Edit > Project Settings > Player)
